@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile"/>
+    <item
+        android:id="@+id/menu_change_password"
+        android:title="Password Change"/>
+    <item
+        android:id="@+id/menu_loan_list"
+        android:title="Loan List"/>
+    <item
+        android:id="@+id/menu_faq"
+        android:title="FAQ"/>
+    <item
+        android:id="@+id/menu_help"
+        android:title="Help"/>
+
+    <item
+        android:id="@+id/menu_privacy_policy"
+        android:title="Privacy Policy"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Log Out"/>
+
+</menu>
