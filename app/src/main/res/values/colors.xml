@@ -3,7 +3,10 @@
         <color name="colorPrimary">#ED1C24</color>
         <color name="colorPrimaryDark">#851F63</color>
         <color name="colorAccent">#FF4081</color>
-        <color name="green">#00FF00</color>
+        <color name="green">#00AC4D</color>
+        <color name="magenta">#851F63</color>
+        <color name="red">#ED1C24</color>
+        <color name="lightPink">#FAE4E6</color>
         <color name="colorTextBorder">#bbbcbcbc</color>
         <color name="colorBorderBack">#FFFFFF</color>
         <color name="colorButtonText">#FFFFFF</color>

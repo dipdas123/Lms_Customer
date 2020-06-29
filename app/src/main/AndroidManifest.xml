@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".base.App"
@@ -17,12 +19,34 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.AgreementActivity"></activity>
+        <activity android:name=".activities.applyLoan.ApplyLoanActivity"></activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activities.UpdateProfileActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.loanStatus.LoanStatusActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.loanList.LoanListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.installmentCheck.InstallmentCheckActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.profileActivity.ProfileActivity"
+            android:launchMode="singleTop" />
         <activity
             android:name=".activities.checkEligibility.CheckEligibilityActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".activities.RegisterSuccessActivity" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.RegisterSuccessActivity"
+            android:launchMode="singleTop" />
         <activity
             android:name=".activities.otpActivity.OtpActivity"
             android:launchMode="singleTop" />
@@ -32,8 +56,12 @@
         <activity
             android:name=".activities.createAccount.CreateAccountActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".activities.mainActivity.MainActivity" />
-        <activity android:name=".activities.SplashScreenActivity">
+        <activity
+            android:name=".activities.mainActivity.MainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

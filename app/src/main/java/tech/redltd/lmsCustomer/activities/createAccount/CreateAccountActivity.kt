@@ -117,5 +117,8 @@ class CreateAccountActivity : AppCompatActivity() {
         })
     }
 
-
+    override fun onDestroy() {
+        super.onDestroy()
+        dialog.dismiss()
+    }
 }

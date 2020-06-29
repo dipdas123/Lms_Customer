@@ -47,7 +47,7 @@ class OtpActivity : AppCompatActivity() {
     }
 
     fun verifyOtp(view: View) {
-        //postOtp(otpString)
+        postOtp(otpString)
         startActivity(Intent(this@OtpActivity,HomeActivity::class.java))
         finish()
     }
@@ -69,8 +69,10 @@ class OtpActivity : AppCompatActivity() {
                           if (otpResponse.payload != null){
                               val token:String = otpResponse.payload.token
                               val userInfo: UserInfo = otpResponse.payload.userInfo
+                              appUtils.saveDataIntoPreference(CommonConstant.CUSTOMER_MSISDN,CommonConstant.phoneNumber)
                               appUtils.saveDataIntoPreference(CommonConstant.TOKEN,token)
                               appUtils.saveDataIntoPreference(CommonConstant.AGENT_ID,userInfo.agentId)
+                              appUtils.saveDataIntoPreference(CommonConstant.AGENT_PASS,userInfo.agentPassword)
                               startActivity(Intent(this@OtpActivity,HomeActivity::class.java))
                               finish()
                           }else{
@@ -79,8 +81,6 @@ class OtpActivity : AppCompatActivity() {
                           }
 
                       }
-
-
                   }
               }catch (ex:Exception){
 
@@ -94,7 +94,7 @@ class OtpActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-
+        dialog.dismiss()
     }
 
 

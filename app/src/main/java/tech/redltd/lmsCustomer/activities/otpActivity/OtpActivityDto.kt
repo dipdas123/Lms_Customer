@@ -34,5 +34,7 @@ data class UserInfo(
     @SerializedName("firstname")
     val firstname: String,
     @SerializedName("lastname")
-    val lastname: String
+    val lastname: String,
+    @SerializedName("agent_password")
+    val agentPassword:String
 )

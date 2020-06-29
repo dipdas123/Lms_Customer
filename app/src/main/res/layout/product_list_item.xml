@@ -9,25 +9,23 @@
 <LinearLayout
     android:orientation="vertical"
     android:layout_margin="4dp"
-    android:layout_width="wrap_content"
+    android:layout_width="180dp"
     android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/productImage"
         android:scaleType="centerInside"
-        android:src="@drawable/phone"
-        android:layout_width="180dp"
-        android:layout_height="200dp"/>
+        android:layout_width="160dp"
+        android:layout_height="150dp"/>
 <TextView
     android:id="@+id/productName"
-    android:text="JJ’s Backpack"
     android:textSize="18sp"
     android:textStyle="bold"
     android:layout_marginStart="8dp"
+    android:maxLines="1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
     <TextView
         android:id="@+id/productPrice"
-        android:text="Tk.7,500.00"
         android:textStyle="italic"
         android:layout_marginStart="8dp"
         android:layout_width="wrap_content"

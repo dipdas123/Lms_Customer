@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/pageTitle"
+        android:text="Agreement"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/mp_10"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/agreementText"
+        android:text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
+laying out print, graphic or web designs. The passage is attributed to an
+unknown typesetter in the 15th century who is thought to have scrambled
+parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen
+book. It usually begins with: \n \n
+
+“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.”\n \n
+আমার মেন হয়, বাংলা লখার সােথ ইংেরজী লখার সুিবধা থাকেল ভাল হয় ।
+তাছাড়া এর সােথ আরও অনান সুেযাগ সুিবধা যমন ইেমইল, চাট ইতািদ আরও আধুিন
+ক সুিবধার িমল থাকেল ভাল হয় । \n \n
+যিদও আিম জািন এট ব সাইট তবুএিডশনাল িহেসেব থাকের সুিবধা হ য় ।
+এেত এর পিরচয় ব কমেব না সােথ ংয় সর্◌ূণ হেয় উঠেব ।\n \n
+For More Details : www.lms.robi.com.bd
+"
+        android:layout_marginTop="@dimen/mp_max"
+        android:layout_marginStart="@dimen/mp_10"
+        android:layout_marginEnd="@dimen/mp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <CheckBox
+        android:id="@+id/readCheckBox"
+        android:layout_marginTop="@dimen/mp_10"
+        android:layout_marginStart="@dimen/mp_10"
+        android:layout_marginEnd="@dimen/mp_10"
+        android:text="I have read, understood and agreed with the terms and conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/mp_max"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancleBtn"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/mp_10"
+            android:layout_marginEnd="@dimen/mp_10"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirmBtn"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/mp_10"
+            android:layout_marginEnd="@dimen/mp_10"
+            android:backgroundTint="@color/magenta"
+            android:text="I Agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

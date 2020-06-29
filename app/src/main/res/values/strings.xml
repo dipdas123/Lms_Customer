@@ -14,4 +14,11 @@
     <string name="national_id">National ID</string>
     <string name="sign_up">Sign Up</string>
     <string name="image_desc">image desc</string>
+    <string name="apply_for_loan_btn">Apply for loan</string>
+    <string name="profile_image">Profile Image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nominee_info">Nominee Info</string>
+    <string name="loan_holder">Loan Holder</string>
 </resources>

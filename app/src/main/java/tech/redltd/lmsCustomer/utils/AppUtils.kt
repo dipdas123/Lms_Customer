@@ -10,15 +10,7 @@ import androidx.core.content.ContextCompat
 
 class AppUtils(private val context: Context) {
 
-    fun showAlert(title: String?,message: String?) {
-        AlertDialog.Builder(context)
-            .setTitle(title)
-            .setMessage(message)
-            .setPositiveButton("OK") {
-                    dialogInterface: DialogInterface, i: Int -> dialogInterface.dismiss()
-            }.create()
-            .show()
-    }
+
 
     fun saveDataIntoPreference(key: String?,value: String?) {
         val sharedPreferences = context.getSharedPreferences(key, Context.MODE_PRIVATE)
